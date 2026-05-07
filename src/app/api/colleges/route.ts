@@ -1,14 +1,27 @@
-import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
-export async function GET() {
-  try {
-    const colleges = await prisma.college.findMany();
 
-    return NextResponse.json(colleges);
-  } catch (error) {
-    return NextResponse.json(
-      { error: "Failed to fetch colleges" },
-      { status: 500 }
-    );
-  }
+export async function GET() {
+  return NextResponse.json([
+    {
+      id: 1,
+      name: "IIT Hyderabad",
+      location: "Hyderabad",
+      image: "/images/iit.jpg",
+      ranking: 1,
+    },
+    {
+      id: 2,
+      name: "NIT Warangal",
+      location: "Warangal",
+      image: "/images/nit.jpg",
+      ranking: 2,
+    },
+    {
+      id: 3,
+      name: "IIIT Hyderabad",
+      location: "Hyderabad",
+      image: "/images/iiit.jpg",
+      ranking: 3,
+    },
+  ]);
 }
