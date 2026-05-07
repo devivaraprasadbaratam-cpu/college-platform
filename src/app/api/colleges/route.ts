@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
-
 export async function GET() {
-  return NextResponse.json([
+  const colleges = [
     {
       id: "1",
       name: "IIT Hyderabad",
@@ -11,7 +10,7 @@ export async function GET() {
       description: "Top engineering institute in India",
       placements: "95%",
       courses: "CSE, ECE, ME",
-      image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/iit.jpg",
     },
     {
       id: "2",
@@ -22,18 +21,9 @@ export async function GET() {
       description: "National Institute of Technology",
       placements: "90%",
       courses: "CSE, EEE, Civil",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/nit.jpg",
     },
-    {
-      id: "3",
-      name: "VIT Vellore",
-      location: "Vellore",
-      fees: 220000,
-      rating: 4.5,
-      description: "Private engineering university",
-      placements: "88%",
-      courses: "CSE, AI, Mechanical",
-      image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop",
-    },
-  ]);
+  ];
+
+  return NextResponse.json(colleges);
 }
