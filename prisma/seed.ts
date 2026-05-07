@@ -14,7 +14,7 @@ async function main() {
         description: "Top engineering institute in India",
         placements: "95%",
         courses: "CSE, ECE, ME",
-        image: "/images/iit.jpg"
+        images: "/images/iit.jpg"
       },
       {
         name: "NIT Warangal",
@@ -24,7 +24,6 @@ async function main() {
         description: "National Institute of Technology",
         placements: "90%",
         courses: "CSE, EEE, Civil",
-        image: "/images/nit.jpg"
       },
       {
         name: "VIT Vellore",
@@ -34,7 +33,6 @@ async function main() {
         description: "Private engineering university",
         placements: "88%",
         courses: "CSE, AI, Mechanical",
-        image: "/images/vit.jpg"
       },
       {
         name: "SRM University",
@@ -44,7 +42,6 @@ async function main() {
         description: "Popular private university",
         placements: "85%",
         courses: "CSE, ECE, MBA",
-        image: "/images/srm.jpg"
       },
     ],
   });

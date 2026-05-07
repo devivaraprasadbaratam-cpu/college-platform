@@ -1,12 +1,11 @@
 import { NextResponse } from "next/server";
-
 export async function GET() {
   return NextResponse.json([
     {
       id: 1,
       name: "IIT Hyderabad",
       location: "Hyderabad",
-      image: "/images/iit.jpg",
+      images: "/images/iit.jpg",
       ranking: 1,
     },
     {
