@@ -1,14 +1,12 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 export default function FavoritesPage() {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [colleges, setColleges] = useState<any[]>([]);
 
-  useEffect(() => {
+   useEffect(() => {
     const saved = localStorage.getItem("favorites");
 
     if (saved) {
