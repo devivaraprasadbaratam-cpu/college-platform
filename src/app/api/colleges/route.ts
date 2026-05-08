@@ -23,6 +23,28 @@ export async function GET() {
       courses: "CSE, EEE, Civil",
       image: "/images/nit.jpg",
     },
+    {
+  id: "3",
+  name: "VIT Vellore",
+  location: "Vellore",
+  fees: 220000,
+  rating: 4.5,
+  description: "Private engineering university",
+  placements: "88%",
+  courses: "CSE, AI, Mechanical",
+  image: "/images/vit.jpg",
+},
+{
+  id: "4",
+  name: "SRM University",
+  location: "Chennai",
+  fees: 200000,
+  rating: 4.3,
+  description: "Popular private university",
+  placements: "85%",
+  courses: "CSE, ECE, MBA",
+  image: "/images/srm.jpg",
+ },
   ];
 
   return NextResponse.json(colleges);
